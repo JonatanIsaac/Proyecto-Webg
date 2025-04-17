@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Fuente para letras Orbitron -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos.css">
+    <!-- AOS Librería -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Gaming</title>
+</head>
+
+
+<body>
+    <canvas id="estrellas"></canvas>
+    <div id="top"></div>
+
+    <header class="header-flex">
+      <h1 class="neon-respirando">Galaxy Gaming</h1>
+      <button class="modo-toggle" aria-label="Cambiar modo">
+        <img  id="icono-modo" src="img/modo-oscuro.png" alt="Modo oscuro">
+      </button>
+      <button class="hamburguesa" aria-label="Menú">☰</button>
+      
+
+
+      
+      <nav>
+          <ul class="menu">
+              <li><a href="#presentacion">Inicio</a></li>
+              <li><a href="#productos">Productos</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+              
+          </ul>
+      </nav>
+  </header>
+  
+  
+    <main>
+        <section id="presentacion"  data-aos="fade-up">
+            <h2>Bienvenido a tu nuevo rincón gamer!</h2>
+            <p>Aquí encontrarás una cuidada selección de accesorios y periféricos gaming que mejoran tu experiencia frente al PC.
+
+               </p>
+               <p> Cada producto viene con su reseña honesta y su enlace directo a Amazon, para que puedas comprar fácil y con confianza.. </p>
+               
+                
+               <p> Y si te gusta ir un paso más allá, pásate por el blog, donde comparto guías, comparativas y las últimas novedades del mundo tech. </p>
+                
+               <p> Explora, descubre y mejora tu setup como se merece. 🎮✨
+                
+                </p>
+        </section>
+
+        <section id="productos" data-aos="fade-right">
+          <div class="pestanas-productos">
+            <button class="pestana activa" data-categoria="todos">Todos</button>
+            <button class="pestana" data-categoria="monitores">Monitores</button>
+            <button class="pestana" data-categoria="teclados">Teclados</button>
+            <button class="pestana" data-categoria="ratones">Ratones</button>
+            <button class="pestana" data-categoria="sillas">Sillas</button>
+            <button class="pestana" data-categoria="auriculares">Auriculares</button>
+          </div>
+            <h2>Accesorios recomendados</h2>
+        
+            
+            <div class="contenedor-tarjetas">   <!-- data-aos-delay="200" = efecto retardo-->
+              <div class="tarjeta-producto" data-categoria="monitores" data-aos="fade-up" data-aos-delay="100">
+                <div class="slider">
+                 <img src="https://m.media-amazon.com/images/I/61VPFubMAGL._AC_SL1000_.jpg" alt="Producto gamer" class="slide activa">
+                 <img src="https://m.media-amazon.com/images/I/41igQ2zBOWL._AC_SL1000_.jpg" alt="Producto gamer" class="slide">
+                 <img src="https://m.media-amazon.com/images/I/41MZxEdDZzL._AC_SL1000_.jpg" alt="Producto gamer" class="slide">
+                 <button class="prev">‹</button>
+                 <button class="next">›</button>
+                </div> 
+                 
+                 <h3>GIGABYTE G27Q 27"</h3>
+                 <p> Descripción breve del accesorio gamer. Ideal para mejorar tu setup.</p>
+                 <a href="productos/monitor-gigabyteg27.html" class="boton">Ver más</a>
+               </div>
+               <div class="tarjeta-producto" data-categoria="ratones" data-aos="fade-up" data-aos-delay="100">
+                <div class="slider">
+                 <img src="https://m.media-amazon.com/images/I/61ni3t1ryQL._AC_SL1500_.jpg" alt="Producto gamer" class="slide activa">
+                 <img src="https://m.media-amazon.com/images/I/71TMarLjpbL._AC_SL1500_.jpg" alt="Producto gamer" class="slide">
+                 <img src="https://m.media-amazon.com/images/I/61U8cVBxNUL._AC_SL1500_.jpg" alt="Producto gamer" class="slide">
+                 <button class="prev">‹</button>
+                 <button class="next">›</button>
+                </div> 
+                 
+                 <h3>Logitech MX Master 3S"</h3>
+                 <p>Descripción breve del accesorio gamer. Ideal para mejorar tu setup.</p>
+                 <a href="productos/mouse-logiMX.html" class="boton">Ver más</a>
+               </div>
+               <div class="tarjeta-producto" data-categoria="ratones" data-aos="fade-up" data-aos-delay="100">
+                <div class="slider">
+                 <img src="https://m.media-amazon.com/images/I/51WN5aXZWIL._AC_SL1500_.jpg" alt="Producto gamer" class="slide activa">
+                 <img src="https://m.media-amazon.com/images/I/619fRKg9bLL._AC_SL1500_.jpg" alt="Producto gamer" class="slide">
+                 <img src="https://m.media-amazon.com/images/I/71iqycN4tiL._AC_SL1500_.jpg" alt="Producto gamer" class="slide">
+                 <button class="prev">‹</button>
+                 <button class="next">›</button>
+                </div> 
+                 
+                 <h3>Logitech M185 Ratón Inalámbrico,"</h3>
+                 <p>Descripción breve del accesorio gamer. Ideal para mejorar tu setup.</p>
+                 <a href="productos/mouse-logiM185.html" class="boton">Ver más</a>
+               </div>
+              <div class="tarjeta-producto" data-categoria="auriculares" data-aos="fade-up" data-aos-delay="100">
+               <div class="slider">
+                <img src="https://m.media-amazon.com/images/I/81bQEkMevBL._AC_SL1500_.jpg" alt="Producto gamer" class="slide activa">
+                <img src="https://m.media-amazon.com/images/I/81-1AsMdHuL._AC_SL1500_.jpg" alt="Producto gamer" class="slide">
+                <img src="https://m.media-amazon.com/images/I/71dL-uPEmuL._AC_SL1500_.jpg" alt="Producto gamer" class="slide">
+                <button class="prev">‹</button>
+                <button class="next">›</button>
+               </div> 
+                
+                <h3>Logitech G G435 Auriculares</h3>
+                <p>Descripción breve del accesorio gamer. Ideal para mejorar tu setup.</p>
+                <a href="productos/auriculares-LogitechG435.html" class="boton">Ver más</a>
+              </div>
+              <div class="contenedor-tarjetas">   <!-- data-aos-delay="200" = efecto retardo-->
+              <div class="tarjeta-producto" data-categoria="teclados" data-aos="fade-up" data-aos-delay="100">
+               <div class="slider">
+                <img src="https://m.media-amazon.com/images/I/713HboKyvoL._AC_SL1500_.jpg" alt="Producto gamer" class="slide activa">
+                <img src="https://m.media-amazon.com/images/I/71UH16oZU9L._AC_SL1500_.jpg" alt="Producto gamer" class="slide">
+                <img src="https://m.media-amazon.com/images/I/71fIoyIPLaL._AC_SL1500_.jpg" alt="Producto gamer" class="slide">
+                <button class="prev">‹</button>
+                <button class="next">›</button>
+               </div>
+                <h3>Teclado HyperX</h3>
+                <p>Descripción breve del accesorio gamer. Ideal para mejorar tu setup.</p>
+                <a href="productos/teclado-hyperXAlloy.html"  class="boton">Ver más</a>
+              </div>
+              <div class="tarjeta-producto" data-categoria="ratones" data-aos="fade-up" data-aos-delay="100">
+               <div class="slider">
+                <img src="https://m.media-amazon.com/images/I/51H5EHyHLOS._AC_SL1000_.jpg" alt="Producto gamer" class="slide activa">
+                <img src="https://m.media-amazon.com/images/I/51S0P8rzCqS._AC_SL1000_.jpg" alt="Producto gamer" class="slide">
+                <img src="https://m.media-amazon.com/images/I/61d-rS9M0IS._AC_SL1000_.jpg" alt="Producto gamer" class="slide">
+                <button class="prev">‹</button>
+                <button class="next">›</button>
+               </div>
+                <h3>Sharkoon Light² 200</h3>
+                <p>Descripción breve del accesorio gamer. Ideal para mejorar tu setup.</p>
+                <a href="productos/mouse-sharkoon200.html" class="boton">Ver más</a>
+              </div>
+              <div class="tarjeta-producto" data-categoria="sillas" data-aos="fade-up" data-aos-delay="100">
+               <div class="slider">
+                <img src="https://m.media-amazon.com/images/I/511AWZ7VrSL._AC_SL1000_.jpg" alt="Producto gamer" class="slide activa">
+                <img src="https://m.media-amazon.com/images/I/51Liz1JXfWL._AC_SL1056_.jpg" alt="Producto gamer" class="slide">
+                <img src="https://m.media-amazon.com/images/I/51n8Gy+4xGL._AC_SL1000_.jpg" alt="Producto gamer" class="slide">
+                <button class="prev">‹</button>
+                <button class="next">›</button>
+                </div>
+                <h3>Silla</h3>
+                <p>Descripción breve del accesorio gamer. Ideal para mejorar tu setup.</p>
+                <a href="productos/silla-sharkoon.html" class="boton">Ver más</a>
+              </div>
+              <div class="tarjeta-producto" data-aos="fade-up" data-aos-delay="100">
+               <div class="slider">
+                <img src="https://m.media-amazon.com/images/I/71ltsViEA8L._AC_SL1500_.jpg" alt="Producto gamer" class="slide activa">
+                <img src="https://m.media-amazon.com/images/I/71ltsViEA8L._AC_SL1500_.jpg" alt="Producto gamer" class="slide">
+                <img src="https://m.media-amazon.com/images/I/71ltsViEA8L._AC_SL1500_.jpg" alt="Producto gamer" class="slide">
+                <button class="prev">‹</button>
+                <button class="next">›</button>
+                </div>
+                <h3>Auriculares</h3>
+                <p>Descripción breve del accesorio gamer. Ideal para mejorar tu setup.</p>
+                <a href="productos/auriculares-hyperx.html" class="boton">Ver más</a>
+              </div>
+              <div class="tarjeta-producto" data-aos="fade-up" data-aos-delay="100">
+               <div class="slider">
+                <img src="https://m.media-amazon.com/images/I/619T6DN1H3L._AC_SL1500_.jpg" alt="Producto gamer" class="slide activa">
+                <img src="https://m.media-amazon.com/images/I/619T6DN1H3L._AC_SL1500_.jpg" alt="Producto gamer" class="slide">
+                <img src="https://m.media-amazon.com/images/I/619T6DN1H3L._AC_SL1500_.jpg" alt="Producto gamer" class="slide">
+                <button class="prev">‹</button>
+                <button class="next">›</button>
+                </div>
+                <h3>Soporte Cascos-Taza</h3>
+                <p>Descripción breve del accesorio gamer. Ideal para mejorar tu setup.</p>
+                <a href="productos/soporteCascos-taza.html" class="boton">Ver más</a>
+              </div>
+              <div class="tarjeta-producto" data-aos="fade-up" data-aos-delay="100">
+               <div class="slider">
+                <img src="https://m.media-amazon.com/images/I/71LiMrcpKZL._AC_SL1500_.jpg" alt="Producto gamer" class="slide activa">
+                <img src="https://m.media-amazon.com/images/I/71LiMrcpKZL._AC_SL1500_.jpg" alt="Producto gamer" class="slide">
+                <img src="https://m.media-amazon.com/images/I/71LiMrcpKZL._AC_SL1500_.jpg" alt="Producto gamer" class="slide">
+                <button class="prev">‹</button>
+                <button class="next">›</button>
+                </div>
+                <h3>Luces LED</h3>
+                <p>Descripción breve del accesorio gamer. Ideal para mejorar tu setup.</p>
+                <a href="productos/tirasled-govee.html" class="boton">Ver más</a>
+              </div>
+              <div class="tarjeta-producto" data-aos="fade-up" data-aos-delay="100">
+               <div class="slider">
+                <img src="https://m.media-amazon.com/images/I/619g4qTg+AL._AC_SL1500_.jpg" alt="Producto gamer" class="slide activa">
+                <img src="https://m.media-amazon.com/images/I/619g4qTg+AL._AC_SL1500_.jpg" alt="Producto gamer" class="slide">
+                <img src="https://m.media-amazon.com/images/I/619g4qTg+AL._AC_SL1500_.jpg" alt="Producto gamer" class="slide">
+                <button class="prev">‹</button>
+                <button class="next">›</button>
+                </div>
+                <h3>Soporte doble monitor</h3>
+                <p>Descripción breve del accesorio gamer. Ideal para mejorar tu setup.</p>
+                <a href="https://amzn.to/44rKKDM" class="boton" target="_blank">Comprar en Amazon</a>
+              </div>
+              <div class="tarjeta-producto" data-categoria="monitores" data-aos="fade-up" data-aos-delay="100">
+                <div class="slider">
+                 <img src="https://m.media-amazon.com/images/I/71odVZ5fKYL._AC_SL1500_.jpg" alt="Producto gamer" class="slide activa">
+                 <img src="https://m.media-amazon.com/images/I/41igQ2zBOWL._AC_SL1000_.jpg" alt="Producto gamer" class="slide">
+                 <img src="https://m.media-amazon.com/images/I/41MZxEdDZzL._AC_SL1000_.jpg" alt="Producto gamer" class="slide">
+                 <button class="prev">‹</button>
+                 <button class="next">›</button>
+                </div> 
+                 
+                 <h3>MSI G2422C Monitor Curvo</h3>
+                 <p>Descripción breve del accesorio gamer. Ideal para mejorar tu setup.</p>
+                 <a href="https://amzn.to/4iPo0ST" class="boton" target="_blank">Comprar en Amazon</a>
+               </div>
+               <div class="tarjeta-producto" data-categoria="monitores" data-aos="fade-up" data-aos-delay="100">
+                <div class="slider">
+                 <img src="https://m.media-amazon.com/images/I/71odVZ5fKYL._AC_SL1500_.jpg" alt="Producto gamer" class="slide activa">
+                 <img src="https://m.media-amazon.com/images/I/41igQ2zBOWL._AC_SL1000_.jpg" alt="Producto gamer" class="slide">
+                 <img src="https://m.media-amazon.com/images/I/41MZxEdDZzL._AC_SL1000_.jpg" alt="Producto gamer" class="slide">
+                 <button class="prev">‹</button>
+                 <button class="next">›</button>
+                </div> 
+                 
+                 <h3>Monitor</h3>
+                 <p>Descripción breve del accesorio gamer. Ideal para mejorar tu setup.</p>
+                 <a href="https://amzn.to/4iPo0ST" class="boton" target="_blank">Comprar en Amazon</a>
+               </div>
+               <div class="tarjeta-producto" data-categoria="monitores" data-aos="fade-up" data-aos-delay="100">
+                <div class="slider">
+                 <img src="https://m.media-amazon.com/images/I/71odVZ5fKYL._AC_SL1500_.jpg" alt="Producto gamer" class="slide activa">
+                 <img src="https://m.media-amazon.com/images/I/41igQ2zBOWL._AC_SL1000_.jpg" alt="Producto gamer" class="slide">
+                 <img src="https://m.media-amazon.com/images/I/41MZxEdDZzL._AC_SL1000_.jpg" alt="Producto gamer" class="slide">
+                 <button class="prev">‹</button>
+                 <button class="next">›</button>
+                </div> 
+                 
+                 <h3>Monitor</h3>
+                 <p>Descripción breve del accesorio gamer. Ideal para mejorar tu setup.</p>
+                 <a href="https://amzn.to/4iPo0ST" class="boton" target="_blank">Comprar en Amazon</a>
+               </div>
+               <div class="tarjeta-producto" data-categoria="monitores" data-aos="fade-up" data-aos-delay="100">
+                <div class="slider">
+                 <img src="https://m.media-amazon.com/images/I/71odVZ5fKYL._AC_SL1500_.jpg" alt="Producto gamer" class="slide activa">
+                 <img src="https://m.media-amazon.com/images/I/41igQ2zBOWL._AC_SL1000_.jpg" alt="Producto gamer" class="slide">
+                 <img src="https://m.media-amazon.com/images/I/41MZxEdDZzL._AC_SL1000_.jpg" alt="Producto gamer" class="slide">
+                 <button class="prev">‹</button>
+                 <button class="next">›</button>
+                </div> 
+                 
+                 <h3>Monitor</h3>
+                 <p>Descripción breve del accesorio gamer. Ideal para mejorar tu setup.</p>
+                 <a href="https://amzn.to/4iPo0ST" class="boton" target="_blank">Comprar en Amazon</a>
+               </div>
+               <div class="tarjeta-producto" data-categoria="monitores" data-aos="fade-up" data-aos-delay="100">
+                <div class="slider">
+                 <img src="https://m.media-amazon.com/images/I/71odVZ5fKYL._AC_SL1500_.jpg" alt="Producto gamer" class="slide activa">
+                 <img src="https://m.media-amazon.com/images/I/41igQ2zBOWL._AC_SL1000_.jpg" alt="Producto gamer" class="slide">
+                 <img src="https://m.media-amazon.com/images/I/41MZxEdDZzL._AC_SL1000_.jpg" alt="Producto gamer" class="slide">
+                 <button class="prev">‹</button>
+                 <button class="next">›</button>
+                </div> 
+                 
+                 <h3>Monitor</h3>
+                 <p>Descripción breve del accesorio gamer. Ideal para mejorar tu setup.</p>
+                 <a href="https://amzn.to/4iPo0ST" class="boton" target="_blank">Comprar en Amazon</a>
+               </div>
+        </div>
+           
+            
+        </section>
+        <section id="blog" data-aos="fade-up">
+          <h2>Blog - Consejos y novedades</h2>
+        
+          <div class="contenedor-blog">
+            <article class="entrada-blog">
+              <h3>Cómo elegir el mejor monitor gamer en 2025</h3>
+              <p>Elegir el monitor adecuado es clave para mejorar tu experiencia de juego...</p>
+              <a href="blog/articulo-monitor.html" class="boton">Leer más</a>
+            </article>
+        
+            <article class="entrada-blog">
+              <h3>Mis periféricos favoritos para PvP en DarkOrbit</h3>
+              <p>Te cuento cuáles son mis periféricos actuales y por qué los elegí...</p>
+              <a href="blog/articulo-darkorbit.html" class="boton">Leer más</a>
+            </article>
+          </div>
+        </section>
+        
+      
+        <section id="contacto" data-aos="zoom-in">
+            <h2>Contacto</h2>
+            <form class="formulario-contacto" action="https://formsubmit.co/jdmn6773@gmail.com" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+        
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        
+                <button type="submit">Enviar</button>
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+        </section>
+        
+    </main>
+
+    <footer>
+      
+        <p>© 2025 Galaxy Gaming. Todos los derechos reservados.</p>
+      
+    </footer>
+    <a href="#top" class="boton-arriba" title="Volver arriba">↑</a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true // esto es para que la animación ocurra solo una vez
+  });
+</script>
+
+<script>
+    const canvas = document.getElementById("estrellas");
+    const ctx = canvas.getContext("2d");
+  
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  
+    const estrellas = [];
+  
+    for (let i = 0; i < 1200; i++) {
+      estrellas.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        r: Math.random() * 1.5,
+        dx: (Math.random() - 0.5) * 0.2,
+        dy: (Math.random() - 0.5) * 0.2
+      });
+    }
+  
+    function animar() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      for (let estrella of estrellas) {
+        ctx.beginPath();
+        ctx.arc(estrella.x, estrella.y, estrella.r, 0, Math.PI * 2);
+        ctx.fillStyle = "white";
+        ctx.fill();
+  
+        estrella.x += estrella.dx;
+        estrella.y += estrella.dy;
+  
+        if (estrella.x < 0 || estrella.x > canvas.width) estrella.dx *= -1;
+        if (estrella.y < 0 || estrella.y > canvas.height) estrella.dy *= -1;
+      }
+      requestAnimationFrame(animar);
+    }
+  
+    animar();
+  
+    window.addEventListener("resize", () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    });
+  </script>
+  <!-- botón para que solo salga cuando se hace scroll-->
+  <script>
+    const botonArriba = document.querySelector('.boton-arriba');
+  
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        botonArriba.style.display = 'block';
+      } else {
+        botonArriba.style.display = 'none';
+      }
+    });
+  </script>
+  <script>
+    const botonHamburguesa = document.querySelector(".hamburguesa");
+    const menu = document.querySelector(".menu");
+  
+    botonHamburguesa.addEventListener("click", () => {
+      menu.classList.toggle("activo");
+    });
+  </script>
+  
+  <script>
+    document.querySelectorAll('.tarjeta-producto').forEach(tarjeta => {
+      const slides = tarjeta.querySelectorAll('.slide');
+      let index = 0;
+  
+      const showSlide = (i) => {
+        slides.forEach(slide => slide.classList.remove('activa'));
+        slides[i].classList.add('activa');
+      }
+  
+      const prevBtn = tarjeta.querySelector('.prev');
+const nextBtn = tarjeta.querySelector('.next');
+
+if (prevBtn && nextBtn && slides.length > 1) {
+  prevBtn.addEventListener('click', () => {
+    index = (index - 1 + slides.length) % slides.length;
+    showSlide(index);
+  });
+
+  nextBtn.addEventListener('click', () => {
+    index = (index + 1) % slides.length;
+    showSlide(index);
+  });
+
+  showSlide(index);
+}
+
+  
+      prevBtn.addEventListener('click', () => {
+        index = (index - 1 + slides.length) % slides.length;
+        showSlide(index);
+      });
+  
+      nextBtn.addEventListener('click', () => {
+        index = (index + 1) % slides.length;
+        showSlide(index);
+      });
+  
+      showSlide(index);
+    });
+  </script>
+  <!-- esto es el script para el motón de modo oscuro/claro-->
+  <script>
+    const botonModo = document.querySelector('.modo-toggle');
+    const icono = document.getElementById('icono-modo');
+  
+    // Ver si había guardado un modo previamente
+    if (localStorage.getItem('modo') === 'claro') {
+      document.body.classList.add('claro');
+      icono.src = 'img/modo-claro.png'; //  Icono de modo claro
+      icono.alt = 'Modo Claro';
+    } else {
+      icono.src = 'img/modo-oscuro.png'; //  Icono de modo oscuro (por defecto)
+      icono.alt = 'Modo Oscuro';
+    }
+  
+    // Cuando se hace clic en el botón
+    botonModo.addEventListener('click', () => {
+      document.body.classList.toggle('claro');
+  
+      if (document.body.classList.contains('claro')) {
+        icono.src = 'img/modo-claro.png'; // 👈 Mostrar icono claro cuando estás en modo claro
+        icono.alt = 'Modo Claro';
+        localStorage.setItem('modo', 'claro');
+      } else {
+        icono.src = 'img/modo-oscuro.png'; // 👈 Mostrar icono oscuro cuando estás en modo oscuro
+        icono.alt = 'Modo Oscuro';
+        localStorage.setItem('modo', 'oscuro');
+      }
+    });
+  </script>
+  // script para las pestañas de productos
+  <script>
+    const botones = document.querySelectorAll(".pestana");
+    const tarjetas = document.querySelectorAll(".tarjeta-producto");
+  
+    botones.forEach(boton => {
+      boton.addEventListener("click", () => {
+        // Marcar pestaña activa
+        botones.forEach(b => b.classList.remove("activa"));
+        boton.classList.add("activa");
+  
+        const categoria = boton.getAttribute("data-categoria");
+  
+        tarjetas.forEach(tarjeta => {
+          if (categoria === "todos" || tarjeta.getAttribute("data-categoria") === categoria) {
+            tarjeta.style.display = "block";
+          } else {
+            tarjeta.style.display = "none";
+          }
+        });
+      });
+    });
+  </script>
+  
+  
+  
+</body>
+</html>

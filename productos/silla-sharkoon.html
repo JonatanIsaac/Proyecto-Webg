@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Silla Gaming</title>
+  <link rel="stylesheet" href="../estilos.css">
+</head>
+<body>
+    <canvas id="estrellas"></canvas>
+   
+      
+  <header class="header-flex">
+    <h1 class="neon-respirando">Galaxy Gaming</h1>
+    <button class="modo-toggle" aria-label="Cambiar modo">
+        <img id="icono-modo" src="../img/modo-oscuro.png" alt="Modo Oscuro" />
+      </button>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html#presentacion">Inicio</a></li>
+        <li><a href="index.html#productos">Productos</a></li>
+        <li><a href="index.html#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="producto-detalle">
+        <div class="imagen-producto">
+          <img src="https://m.media-amazon.com/images/I/511AWZ7VrSL._AC_SL1000_.jpg" alt="Silla Sharkoon" />
+        </div>
+      
+        <div class="info-producto">
+          <h2>Silla Sharkoon SKILLER SGS2</h2>
+          <p class="descripcion-producto">Una silla gamer ergonómica con respaldo ajustable, cojines incluidos y una estética moderna ideal para largas sesiones frente al PC.</p>
+          <a href="https://amzn.to/43tgyb7" target="_blank" class="boton">Comprar en Amazon</a>
+        </div>
+      </section>
+      
+  </main>
+
+  <footer>
+    <p>© 2025 Galaxy Gaming. Todos los derechos reservados.</p>
+  </footer>
+  <script>
+    const canvas = document.getElementById("estrellas");
+    const ctx = canvas.getContext("2d");
+  
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  
+    const estrellas = [];
+  
+    for (let i = 0; i < 1200; i++) {
+      estrellas.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        r: Math.random() * 1.5,
+        dx: (Math.random() - 0.5) * 0.2,
+        dy: (Math.random() - 0.5) * 0.2
+      });
+    }
+  
+    function animar() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      for (let estrella of estrellas) {
+        ctx.beginPath();
+        ctx.arc(estrella.x, estrella.y, estrella.r, 0, Math.PI * 2);
+        ctx.fillStyle = "white";
+        ctx.fill();
+  
+        estrella.x += estrella.dx;
+        estrella.y += estrella.dy;
+  
+        if (estrella.x < 0 || estrella.x > canvas.width) estrella.dx *= -1;
+        if (estrella.y < 0 || estrella.y > canvas.height) estrella.dy *= -1;
+      }
+      requestAnimationFrame(animar);
+    }
+  
+    animar();
+  
+    window.addEventListener("resize", () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    });
+  </script>
+ <!-- esto es el script para el motón de modo oscuro/claro-->
+ <script>
+    const botonModo = document.querySelector('.modo-toggle');
+    const icono = document.getElementById('icono-modo');
+  
+    // Ver si había guardado un modo previamente
+    if (localStorage.getItem('modo') === 'claro') {
+      document.body.classList.add('claro');
+      icono.src = '../img/modo-claro.png'; //  Icono de modo claro
+      icono.alt = 'Modo Claro';
+    } else {
+      icono.src = '../img/modo-oscuro.png'; //  Icono de modo oscuro (por defecto)
+      icono.alt = 'Modo Oscuro';
+    }
+  
+    // Cuando se hace clic en el botón
+    botonModo.addEventListener('click', () => {
+      document.body.classList.toggle('claro');
+  
+      if (document.body.classList.contains('claro')) {
+        icono.src = '../img/modo-claro.png'; // 👈 Mostrar icono claro cuando estás en modo claro
+        icono.alt = 'Modo Claro';
+        localStorage.setItem('modo', 'claro');
+      } else {
+        icono.src = '../img/modo-oscuro.png'; // 👈 Mostrar icono oscuro cuando estás en modo oscuro
+        icono.alt = 'Modo Oscuro';
+        localStorage.setItem('modo', 'oscuro');
+      }
+    });
+  </script>
+  
+</body>
+</html>
